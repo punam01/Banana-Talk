@@ -9,18 +9,24 @@ console.log(btn2);
 var url="https://api.funtranslations.com/translate/minion.json";
 function displayAns(t){
     txt.innerText=t.contents.translated;
+    inputText.innerText="";
 };
 function Toggle(){
     if (sec.style.display === "none") {
         sec.style.display = "block";
         slider.style.display="none";
     } 
-}
+};
+function errorHandler(error){
+    alert("Server error:For public API calls the limit is 60 API calls a day with distribution of 5 calls an hour. " );
+};
+
 function doFetch(){
     var ul=url+"?"+"text="+inputText.value;
     fetch(ul)
     .then(Response=>Response.json())
-    .then(json=>displayAns(json));
+    .then(json=>displayAns(json))
+    .catch(errorHandler);
 };
 btn1.addEventListener("click",Toggle);
 
