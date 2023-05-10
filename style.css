@@ -134,6 +134,26 @@ p{
   animation: fade-up 0.5s;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#22d3ee var(--red-color); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#fde047 #555; 
+}
+
 @keyframes fade-up {
   0%{
     transform: translateY(-10px) scale(0.8);
