@@ -1,3 +1,4 @@
+
 var inputText=document.querySelector("#txtarea");
 var btn2=document.querySelector(".button2");
 var txt=document.querySelector("p");
@@ -8,7 +9,7 @@ console.log(btn2);
 
 var url="https://api.funtranslations.com/translate/minion.json";
 function displayAns(t){
-    txt.innerText=t.contents.translated;
+    txt.innerText="👉"+ t.contents.translated;
     inputText.innerText="";
 };
 function Toggle(){
