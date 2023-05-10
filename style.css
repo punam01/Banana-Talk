@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;500;600&family=Kanit:wght@200;300;400&family=Noto+Serif&family=Pacifico&family=Roboto:ital,wght@0,900;1,700;1,900&family=Source+Sans+Pro:wght@200;300&display=swap');
 body{
     padding: 0;
     margin: 0;
@@ -10,6 +11,7 @@ body{
     margin-top: 2rem;
     display: flex;
     justify-content: center;
+    animation: fade-up 0.5s;
 }
 #slider img{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -19,6 +21,8 @@ body{
   background-color: white;
   border: none;
   color:black;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
   text-align: center;
   font-size: 28px;
   padding: 20px;
@@ -73,32 +77,43 @@ section{
     display: block;
     height: 100vh;
     text-align: right;
+    font-family: 'Amatic SC', cursive;
     background-image: url("images/bg.jpg");
     background-repeat: no-repeat;
     background-size:fit;
-    padding: 3rem;
+    padding: 5rem;
 }
 header{
     float: right;
+    font-family: 'Amatic SC', cursive;
     font-size: 70px;
+    animation: fade-up 0.5s;
 }
 .about{
   width:fit-content;
-  font-size: 1rem;
+  font-size: 1.5rem;
   max-width: 10rem;
+  animation: fade-up 0.5s;
 }
 textarea{
+  margin-top: -50px;
     width:30rem;
     height: fit-content;
     padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: none;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 1.5rem;
     border-radius: 5px;
+    animation: fade-up 0.5s;
   }
  .button2 {
   background-color: white;
   border: none;
   color:black;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 900;
   text-align: center;
   font-size: 28px;
   padding: 20px;
@@ -106,6 +121,7 @@ textarea{
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  animation: fade-up 0.5s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
 }
@@ -115,5 +131,16 @@ p{
   height: fit-content;
   float: right;
   font-size: 2rem;
+  animation: fade-up 0.5s;
+}
+
+@keyframes fade-up {
+  0%{
+    transform: translateY(-10px) scale(0.8);
+  }
+  100%{
+    transform: translateY(10px) scale(1);
+  }
+  
 }
 
